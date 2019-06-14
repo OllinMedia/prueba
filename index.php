@@ -2,11 +2,17 @@
 
     session_start();
 
+<<<<<<< HEAD
     //cambio
 
     if ( isset($_SESSION['banner-clientes-3'])) {
          
         $num = $_SESSION['banner-clientes-3'];
+=======
+    if ( isset($_SESSION['banner-clientes'])) {
+         
+        $num = $_SESSION['banner-clientes'];
+>>>>>>> parent of d92e34b... cambio de banner
         $num = $num+1;
         if ($num > 2) { $num = 1; }
         $_SESSION['banner-clientes'] = $num;
