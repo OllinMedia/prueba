@@ -2,9 +2,11 @@
 
     session_start();
 
-    if ( isset($_SESSION['banner-clientes'])) {
+    //cambio
+
+    if ( isset($_SESSION['banner-clientes-2'])) {
          
-        $num = $_SESSION['banner-clientes'];
+        $num = $_SESSION['banner-clientes-2'];
         $num = $num+1;
         if ($num > 2) { $num = 1; }
         $_SESSION['banner-clientes'] = $num;
